@@ -1,0 +1,290 @@
+/* used color */
+:root {
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --iris: #4d5ae5;
+  --navy_blue: #2e2f42;
+  --slate: #434455;
+  --white: #fff;
+  --ocean: #404bbf;
+}
+
+/*main style*/
+
+body {
+  font-family: roboto;
+  color: var(--slate);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.link {
+  list-style-type: none; /*remove bullet point to all list class*/
+  color: var(--slate);
+  padding: 0; /*remove indent from left and right*/
+}
+
+.link-list,
+.link-web {
+  text-decoration: none; /*remove underlines*/
+}
+
+/* footer section */
+
+.footer {
+  background-color: var(--navy_blue);
+  width: 1440px;
+  height: 312px;
+  box-sizing: border-box;
+  padding: 100px 1020px 100px 156px;
+}
+
+.link-web {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.31;
+  letter-spacing: 0.54px;
+  font-family: raleway;
+}
+
+.link-spanweb {
+  color: var(--iris);
+}
+
+.link-spanstudio {
+  color: var(--cloud);
+}
+
+.footer-text {
+  color: var(--cloud);
+  line-height: 1.5;
+}
+/* line-height conversion
+ 1 = 16px */
+
+/* change color when pointed by cursor */
+.link-web:hover .link-spanweb,
+.link-web:focus .link-spanweb,
+.link-web:hover .link-spanstudio,
+.link-web:focus .link-spanstudio {
+  color: var(--ocean);
+}
+/* end of footer section */
+
+/* header section */
+.header {
+  color: var(--navy_blue);
+}
+
+.header-web {
+  color: var(--iris);
+}
+
+.header-studio {
+  color: var(--navy_blue);
+}
+
+.header-nav .link-list {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--navy_blue);
+}
+
+.link .link-list {
+  color: var(--slate);
+  font-style: normal;
+}
+
+.link-list:hover,
+.link-list:focus,
+.link-web:hover .header-web,
+.link-web:focus .header-web,
+.link-web:focus .header-studio,
+.link-web:hover .header-studio {
+  color: var(--ocean); /* change color when pointed by cursor */
+  cursor: pointer;
+}
+
+.header .link {
+  margin: 0; /* removing spaces between contact */
+}
+
+/* end of header style */
+
+/* Hero styling */
+.hero {
+  background-color: var(--navy_blue);
+  width: 1440px;
+  height: 600px;
+  box-sizing: border-box;
+  display: flex-block;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  flex-direction: column;
+}
+
+.hero-title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 107.43%;
+  letter-spacing: 1.12px;
+  margin: auto;
+  padding: 188px 472px 48px;
+}
+
+/* button style section*/
+.main-btn {
+  box-sizing: border-box;
+  color: var(--white);
+  background: var(--iris);
+  border-radius: 4px;
+  border: 4px;
+  border-color: none;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--ocean);
+}
+/* end of button style */
+
+/* team style section */
+
+.title {
+  text-align: center;
+}
+.team-link-list {
+  text-align: center;
+}
+
+.team-section {
+  box-sizing: border-box;
+  background-color: var(--cloud);
+  width: 1440px;
+  height: 732px;
+  align-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 120px 156px;
+}
+
+.link {
+  display: inline-flex;
+}
+
+.team-section .link {
+  background-color: var(--white);
+  height: 380px;
+  width: 264px;
+  margin: 4px;
+  border-bottom-left-radius: 4px; /* to add radius to the bottom border */
+  border-bottom-right-radius: 4px; /* to add radius to the bottom border */
+}
+
+.team-section .title {
+  padding-bottom: 36px;
+}
+
+.team-name {
+  gap: 8px;
+}
+/* Policy Style Section */
+
+.policy-section {
+  display: inline-flex;
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: 1128px;
+  height: 104px;
+  margin: 120px 156px 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.policy-list {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.4px;
+}
+
+.policy-section .link {
+  gap: 24px; /*to add gap between class policy-list*/
+}
+
+/* Doing style section */
+.doing-section {
+  display: block;
+  box-sizing: border-box;
+  background-color: var(--white);
+  width: 1128px;
+  height: 412px;
+  margin: 60px 156px 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.doing-section .link {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.team-section .title,
+.doing-section .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+/* headings style section*/
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 72px;
+  padding: 24px 156px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .link {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header .link-list {
+  margin-right: 10 px;
+}
+
+.header .link-list:last-child {
+  margin-right: 0;
+  margin-left: 20px; /* to add space between class link-list*/
+}
+
+.header-nav .link-web {
+  margin-right: 20px;
+}
